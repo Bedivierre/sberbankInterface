@@ -1,0 +1,31 @@
+{
+    "name": "bedivierre/sberbank",
+    "description": "Work with Sberbank API",
+    "type": "library",
+    "license": "MIT",
+    "version": "0.1-dev",
+    "authors": [
+        {
+            "name": "Bedivierre",
+            "email": "dev@bedivierre.com"
+        }
+    ],
+    "support": {
+        "email": "support@bedivierre.com"
+    },
+    "require": {
+        "php": ">=7.1",
+        "bedivierre/craftsman":"dev-master",
+        "ext-curl": "*",
+        "ext-mbstring": "*",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bedivierre\\Sberbank\\" : "src/",
+            "Bedivierre\\Sberbank\\Requests\\" : "src/Requests/",
+            "Bedivierre\\Sberbank\\Requests\\RegisterOrder\\" : "src/Requests/RegisterOrder/",
+            "Bedivierre\\Sberbank\\Responses\\" : "src/Responses/"
+        }
+    }
+}
