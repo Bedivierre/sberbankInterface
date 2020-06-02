@@ -25,6 +25,7 @@
             "Bedivierre\\Sberbank\\" : "src/",
             "Bedivierre\\Sberbank\\Requests\\" : "src/Requests/",
             "Bedivierre\\Sberbank\\Requests\\RegisterOrder\\" : "src/Requests/RegisterOrder/",
+            "Bedivierre\\Sberbank\\Requests\\GetOrderStatus\\" : "src/Requests/GetOrderStatusRequest/",
             "Bedivierre\\Sberbank\\Responses\\" : "src/Responses/"
         }
     }
