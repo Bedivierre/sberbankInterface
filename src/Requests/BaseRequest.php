@@ -71,6 +71,6 @@ class BaseRequest extends RestRequestObject
 
     protected function fetchData()
     {
-        return new BaseDataObject();
+        return $this;
     }
 }

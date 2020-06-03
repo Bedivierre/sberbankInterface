@@ -17,9 +17,6 @@ class BaseResponse extends \Bedivierre\Craftsman\Aqueduct\REST\RestResponseObjec
             return;
         }
 
-        foreach ($response as $key => $value)
-        {
-            $this[$key] = $value;
-        }
+        $this->absorb($response);
     }
 }
