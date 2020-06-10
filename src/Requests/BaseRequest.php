@@ -4,7 +4,8 @@
 namespace Bedivierre\Sberbank\Requests;
 
 
-use Bedivierre\Craftsman\Aqueduct\REST\RestRequestObject;
+use Bedivierre\Craftsman\Aqueduct\BaseRequestObject;
+use Bedivierre\Craftsman\Aqueduct\BaseResponseObject;
 use Bedivierre\Craftsman\Masonry\BaseDataObject;
 use Bedivierre\Sberbank\SB_Config;
 
@@ -15,7 +16,7 @@ use Bedivierre\Sberbank\SB_Config;
  * Class BaseRequest
  * @package Bedivierre\Sberbank\Requests
  */
-class BaseRequest extends RestRequestObject
+class BaseRequest extends BaseRequestObject
 {
 
     /**
@@ -66,7 +67,7 @@ class BaseRequest extends RestRequestObject
         $ret->password = $this->getPassword();
         $fetch = $this->fetchData();
         $ret = $ret->merge($fetch);
-        return $ret->toArray();
+        return $ret;
     }
 
     protected function fetchData()

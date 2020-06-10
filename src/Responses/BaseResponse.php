@@ -6,7 +6,7 @@ namespace Bedivierre\Sberbank\Responses;
 
 use Bedivierre\Craftsman\Aqueduct\BaseResponseObject;
 
-class BaseResponse extends \Bedivierre\Craftsman\Aqueduct\REST\RestResponseObject
+class BaseResponse extends \Bedivierre\Craftsman\Aqueduct\BaseResponseObject
 {
     public function __construct(BaseResponseObject $response)
     {

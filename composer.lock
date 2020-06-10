@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Bedivierre/Craftsman.git",
-                "reference": "53340b3b11b5a9bb49624fe1af8a453356879e22"
+                "reference": "c7ab01b191d22482d5065998bc3b8b95673037e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Bedivierre/Craftsman/zipball/53340b3b11b5a9bb49624fe1af8a453356879e22",
-                "reference": "53340b3b11b5a9bb49624fe1af8a453356879e22",
+                "url": "https://api.github.com/repos/Bedivierre/Craftsman/zipball/c7ab01b191d22482d5065998bc3b8b95673037e9",
+                "reference": "c7ab01b191d22482d5065998bc3b8b95673037e9",
                 "shasum": ""
             },
             "require": {
@@ -31,7 +31,10 @@
                 "psr-4": {
                     "Bedivierre\\Craftsman\\": "src/",
                     "Bedivierre\\Craftsman\\Masonry\\": "src/DOM/",
+                    "Bedivierre\\Craftsman\\Appraise\\": "src/DataAssert/",
+                    "Bedivierre\\Craftsman\\Poetry\\": "src/String/",
                     "Bedivierre\\Craftsman\\Aqueduct\\": "src/DataTransport/",
+                    "Bedivierre\\Craftsman\\Aqueduct\\Flow\\": "src/DataTransport/Transport/",
                     "Bedivierre\\Craftsman\\Aqueduct\\REST\\": "src/DataTransport/REST/"
                 }
             },
@@ -46,7 +49,7 @@
                 }
             ],
             "description": "Comprehensive class library",
-            "time": "2020-06-03T07:47:13+00:00"
+            "time": "2020-06-10T13:25:30+00:00"
         }
     ],
     "packages-dev": [],
