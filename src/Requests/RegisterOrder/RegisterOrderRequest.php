@@ -105,7 +105,7 @@ class RegisterOrderRequest extends BaseRequest
     /**
      * @return RegisterOrderResponse
      */
-    public function doRequest()
+    public function doRequest($array = [])
     {
         return new RegisterOrderResponse(parent::doRequest());
     }

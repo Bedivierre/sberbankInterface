@@ -30,7 +30,7 @@ class GetOrderStatusRequest extends BaseRequest
     /**
      * @return GetOrderStatusResponse
      */
-    public function doRequest()
+    public function doRequest($array = [])
     {
         $ret = parent::doRequest();
         return new GetOrderStatusResponse($ret);

@@ -17,8 +17,6 @@ die();
 
 
 $r = new RegisterOrderRequest('22-test');
-$r->setReturnUrl('https://sampo.shop');
-$r->setFailUrl('https://sampo.shop/fail.php');
 $r->setCustomerDetails('Тут', "79657536601");
 
 $check = new BaseRequestObject('http://172.20.4.7/shopadmin/kassa_check.php4', 'get');
