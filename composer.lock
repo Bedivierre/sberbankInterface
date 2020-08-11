@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Bedivierre/Craftsman.git",
-                "reference": "faba3507de782e4304d57849ab1c341d2bcc6399"
+                "reference": "e49e89daa424bd93226632dbff935617da5df3a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Bedivierre/Craftsman/zipball/faba3507de782e4304d57849ab1c341d2bcc6399",
-                "reference": "faba3507de782e4304d57849ab1c341d2bcc6399",
+                "url": "https://api.github.com/repos/Bedivierre/Craftsman/zipball/e49e89daa424bd93226632dbff935617da5df3a5",
+                "reference": "e49e89daa424bd93226632dbff935617da5df3a5",
                 "shasum": ""
             },
             "require": {
@@ -49,7 +49,7 @@
                 }
             ],
             "description": "Comprehensive class library",
-            "time": "2020-08-04T12:55:42+00:00"
+            "time": "2020-08-06T10:13:09+00:00"
         }
     ],
     "packages-dev": [],

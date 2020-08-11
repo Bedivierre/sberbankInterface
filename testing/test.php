@@ -8,6 +8,14 @@ use Bedivierre\Sberbank\Requests\RegisterOrder\RegisterOrderRequest;
 use Bedivierre\Sberbank\Requests\SB_Const;
 
 
+
+$r = new RegisterOrderRequest();
+
+
+
+
+
+
 $r = new GetOrderStatusRequest('38ed994d-aba3-794c-977c-f28f5e34c7dd');
 
 

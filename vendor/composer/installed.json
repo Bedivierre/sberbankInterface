@@ -1,0 +1,49 @@
+[
+    {
+        "name": "bedivierre/craftsman",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Bedivierre/Craftsman.git",
+            "reference": "e49e89daa424bd93226632dbff935617da5df3a5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Bedivierre/Craftsman/zipball/e49e89daa424bd93226632dbff935617da5df3a5",
+            "reference": "e49e89daa424bd93226632dbff935617da5df3a5",
+            "shasum": ""
+        },
+        "require": {
+            "ext-curl": "*",
+            "ext-json": "*",
+            "ext-mbstring": "*",
+            "php": ">=7.1"
+        },
+        "time": "2020-08-06T10:13:09+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Bedivierre\\Craftsman\\": "src/",
+                "Bedivierre\\Craftsman\\Masonry\\": "src/DOM/",
+                "Bedivierre\\Craftsman\\Appraise\\": "src/DataAssert/",
+                "Bedivierre\\Craftsman\\Poetry\\": "src/String/",
+                "Bedivierre\\Craftsman\\Aqueduct\\": "src/DataTransport/",
+                "Bedivierre\\Craftsman\\Aqueduct\\Flow\\": "src/DataTransport/Transport/",
+                "Bedivierre\\Craftsman\\Cartography\\": "src/Routing/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Bedivierre",
+                "email": "dev@bedivierre.com"
+            }
+        ],
+        "description": "Comprehensive class library"
+    }
+]
