@@ -7,6 +7,15 @@ namespace Bedivierre\Sberbank\Requests;
 class SB_Const
 {
 
+    const STATUS_NOT_PAID = 0;
+    const STATUS_PAYMENT_DEPOSITED = 1;
+    const STATUS_PAID = 2;
+    const STATUS_CANCELLED = 3;
+    const STATUS_REFUNDED = 4;
+    const STATUS_EMITENT_AUTH = 5;
+    const STATUS_DECLINED = 6;
+
+
     //========== Тип товаров
     /**
      * @var int Товар
