@@ -1,26 +1,42 @@
 <?php
 require_once "../vendor/autoload.php";
+require_once "conf.php";
 
 use Bedivierre\Craftsman\Aqueduct\BaseRequestObject;
 use Bedivierre\Sberbank\Requests\GetOrderStatus\GetOrderStatusRequest;
+use Bedivierre\Sberbank\Requests\RegisterOrder\RegisterOrderNoCartRequest;
 use Bedivierre\Sberbank\Requests\RegisterOrder\RegisterOrderPosition;
 use Bedivierre\Sberbank\Requests\RegisterOrder\RegisterOrderRequest;
 use Bedivierre\Sberbank\Requests\SB_Const;
 
 
 
-$r = new RegisterOrderRequest();
+$order = new RegisterOrderRequest('qwerty11214');
+//$order->setCustomerDetails('SPB', "79657536601");
+//
+$i = new RegisterOrderPosition('Нужный товар', 'SA_1112331/SD', 15000,
+      1, SB_Const::NDS_10, SB_Const::PAYMENT_OBJECT_GOODS,
+        SB_Const::PAYMENT_FULL_PAYMENT);
+$i->addItemDetails('mark', 'tbkal;kdhkajncfjkasdgbifjk;saf');
 
+$order->addPosition($i);
 
+$response = $order->doRequest();
 
+if($response->errorMessage){
+    echo "Ошибка при выполнении запроса: {$response->errorMessage}";
+}
 
+echo $response->formUrl . "\r\n";
 
-
-$r = new GetOrderStatusRequest('38ed994d-aba3-794c-977c-f28f5e34c7dd');
-
+$r = new GetOrderStatusRequest($response->orderId);
 
 $res = $r->doRequest();
-echo $res->orderBundle->cartItems->items[0]->name;
+echo "===Item list===\r\n";
+foreach ($res->orderBundle->cartItems->items as $item){
+    echo $item->name;
+}
+
 die();
 
 

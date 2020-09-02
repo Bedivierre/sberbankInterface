@@ -21,7 +21,8 @@ class RegisterOrderBundle extends BaseDataObject
         parent::__construct([]);
 
         $this->setDate($orderCreationDate);
-        $this->setCustomerDetails($address, $contact, $isContactPhone);
+        if($address || $contact)
+            $this->setCustomerDetails($address, $contact, $isContactPhone);
 
         $this->cartItems = new RegisterOrderCartItems();
 
